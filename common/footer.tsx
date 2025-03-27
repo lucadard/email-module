@@ -11,11 +11,11 @@ import assets from "@/common/assets";
 import constants from "@/common/constants";
 
 export const Footer = () => (
-  <Section className="bg-[#5353F5] py-6 px-4 rounded-b-[12px] text-white">
+  <Section className="bg-primary py-6 px-4 rounded-b-xl text-primary-foreground">
     <Row className="mb-0">
       <Column>
         <Img
-          className="h-[31px] w-[189px] object-cover mx-3"
+          className="h-[31px] w-[189px] object-cover"
           src={assets.contactWithUsFooter}
         />
       </Column>
@@ -43,15 +43,15 @@ export const Footer = () => (
       </Column>
     </Row>
     <Row>
-      <Column className="text-[8px] font-[400]">Our mailing address is:</Column>
+      <Column className="text-[8px]">Our mailing address is:</Column>
       <Column
-        className="text-[8px] font-[400] text-right hidden md:block"
+        className="text-[8px] text-right hidden md:block text-white no-underline"
         align="right"
       >
         {constants.mailingAddress}
       </Column>
     </Row>
-    <Text className="text-[8px] font-[400] md:hidden !my-0 text-decoration-none">
+    <Text className="text-[8px] md:hidden !my-0 text-white no-underline">
       {constants.mailingAddress}
     </Text>
   </Section>
