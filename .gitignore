@@ -3,3 +3,10 @@ out
 
 .react-email
 .env
+
+# ignore the lock file of pnpm, yarn or npm, the user decides
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+.DS_Store

@@ -101,6 +101,23 @@ String personalizedEmail = template
 
 This module uses Tailwind CSS for styling. You can customize the styles directly in your email components.
 
+## Assets Management
+
+The `assets/` directory in this project is used only for reference and documentation purposes. These assets are not directly used in the email templates and should not be referenced in your email components.
+
+For production use, all assets (images, logos, etc.) should be hosted on a CDN or cloud storage service (e.g., Amazon S3, CloudFront, etc.) and referenced using their public URLs in the email templates.
+
+Example of correct asset usage in templates:
+
+```tsx
+<Img
+  src="https://your-cdn.com/images/logo.png"
+  alt="Company Logo"
+  width={200}
+  height={50}
+/>
+```
+
 ## For Module Maintainers
 
 Consider these guidelines to improve the project:
