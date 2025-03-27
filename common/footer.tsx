@@ -15,7 +15,7 @@ export const Footer = () => (
     <Row className="mb-0">
       <Column>
         <Img
-          className="h-[31px] w-[189px] object-cover -mx-3"
+          className="h-[31px] w-[189px] object-cover mx-3"
           src={assets.contactWithUsFooter}
         />
       </Column>
@@ -51,7 +51,7 @@ export const Footer = () => (
         {constants.mailingAddress}
       </Column>
     </Row>
-    <Text className="text-[8px] font-[400] md:hidden !my-0">
+    <Text className="text-[8px] font-[400] md:hidden !my-0 text-decoration-none">
       {constants.mailingAddress}
     </Text>
   </Section>
